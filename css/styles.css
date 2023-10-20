@@ -1,0 +1,20 @@
+a:link {
+  color: tomato;
+}
+
+a:visited
+{
+  color: yellow;
+}
+
+a:hover {
+color : violet;
+}
+
+a:active {
+  color: aqua;
+  
+}
+
+
+

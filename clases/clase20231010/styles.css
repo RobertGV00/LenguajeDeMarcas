@@ -1,0 +1,15 @@
+ul {
+    color: blue;
+    list-style-type: circle;
+
+}
+
+ol {
+    color: red;
+    list-style-type: upper-roman;
+}
+
+.anidadas {
+    color: aqua;
+    list-style-type: armenian;
+}
