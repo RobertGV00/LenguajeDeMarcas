@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+</head>
+<body>
+    <h1>Datos Recibidos</h1>
+
+    <script>
+        // Función para obtener parámetros de la pagina web principal (Este no suele cambiar)
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return "";
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        // Obtén los parámetros en la pagina web actual (Aqui es donde se añaden las variables)
+        var nombre = getParameterByName("nombre");
+        var lenguaje = getParameterByName("lenguaje");
+        var aficiones = getParameterByName("aficiones")
+
+        // Muestra los datos en la página (Aqui es donde añadimos el mensaje para mostrar los datos en la pagina.)
+        document.write("<p>Nombre: " + nombre + "</p>");
+        document.write("<p>Lenguaje: " + lenguaje + "</p>")
+        document.write("<p>Aficiones: " + aficiones + "</p>")
+    </script>
+</body>
+</html>
+</body>
+</html>

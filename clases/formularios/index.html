@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+        <style>
+            form {
+                width: 50%;
+                height: 50%;
+            }
+            fieldset {
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Un formulario lleva la etiqueta form-->
+        <!-- En los formularios son muy importantes los atributos (no solo las etiquetas)-->
+        <!-- Para la etiqueta form: 
+            Action es la pagina del servidor web al que enviamos la información del formulario
+        method es el metodo HTTP de envío (get | post | put) 
+        id es el identificador unico del elemento en que esté-->
+
+        <form action="final.html" method="get" id="mi-formulario"
+            target="_blank">
+            <!-- Vamos a meter cada pareja label-input en un bloque fieldset, para estructurar formulario; fieldset añade un salto de linea al cerrarse, igual que la etiqueta parrafo (p)-->
+            <fieldset>
+                <!-- Atributos importantes: el valor del atributo for de label, tiene que coincidir con el id del input. -->
+                <h2>Cuandro de texto</h2>
+                <label for="cuadro-de-texto">Nombre: </label>
+                <input type="text" name="nombre" id="cuadro-de-texto"
+                    placeholder="Escribe tu nombre">
+            </fieldset>
+            <br>
+            <fieldset>
+                <h2>Radio Button</h2>
+                <p>Cual es tu lenguaje web favorito</p>
+                <input type="radio" name="lenguaje" id="html" value="HTML"><label
+                    for="html">HTML5</label>
+                <input type="radio" name="lenguaje" id="css" value="CSS"><label
+                    for="css">CSS3</label>
+                <input type="radio" name="lenguaje" id="js" value="JavaScript"><label
+                    for="js">JavaScript</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <h2>Casillas de verificacion: puede haber mas de una casilla selecionada</h2>
+            <p>¿Cuales son tus aficiones?</p>
+            <input type="checkbox" name="aficiones" id="futbol" value="Futbol"><label for="futbol">Futbol</label>
+            <input type="checkbox" name="aficiones" id="baile" value="Baile"><label for="baile">Baile</label>
+            <input type="checkbox" name="aficiones" id="baloncesto" value="Baloncest"><label for="baloncesto">Baloncesto</label>
+            <input type="checkbox" name="aficiones" id="leer" value="Leer"><label for="leer">Leer</label>
+            </fieldset>
+            <br>
+            <fieldset>
+
+                <input type="submit" value="Enviar">
+            </fieldset>
+
+        </form>
+
+        <script>
+            document.getElementById("mi-formulario").addEventListener("submit", function (event) {
+                event.preventDefault();
+                const formulario = event.target;
+                const nombre = formulario.elements["nombre"].value;
+                const lenguaje = formulario.elements["lenguaje"].value;
+                const aficiones = formulario.elements["aficiones"].value;
+                const nuevaURL = "final.html?nombre=" + nombre + "&lenguaje=" + lenguaje + "&aficiones=" + aficiones;
+                window.location.href = nuevaURL;
+            })
+        </script>
+    </body>
+</html>
