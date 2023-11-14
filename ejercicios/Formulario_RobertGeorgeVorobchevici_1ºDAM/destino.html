@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destino</title>
+<style>
+    table {
+border: 2px solid black;
+border-collapse: collapse ;
+width: 30%;
+margin: auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    th {
+        background-color: rgb(178, 116, 240);
+        color: white;
+        border: 2px solid black;
+        border-collapse: collapse ;
+        width: 15%;
+    }
+    td {
+        background-color: whitesmoke;
+        font-weight: bold;
+        border: 2px solid black;
+        border-collapse: collapse ;
+        width: 15%;
+    }
+</style>
+</head>
+<body>
+    <h1>Datos Recibios Practica 3</h1>
+    <div>
+</div>
+    <script>
+        // Función para obtener parámetros de la pagina web principal (Este no suele cambiar)
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return "";
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        // Obtén los parámetros en la pagina web actual (Aqui es donde se añaden las variables)
+        var nombre = getParameterByName("nombre");
+        var apellidos = getParameterByName("apellidos");
+        var email = getParameterByName("email");
+        var desarollo = getParameterByName("desarollo");
+        var experiencia = getParameterByName("experiencia");
+        var tecnologias = getParameterByName("tecnologias");
+        var area = getParameterByName("area");
+
+        // Muestra los datos en la página (Aqui es donde añadimos el mensaje para mostrar los datos en la pagina.)
+        document.write("<table>"+"<tr>"+"<th>Nombre: </th>"+"<td>" + nombre + "</td>"+"</tr>");
+        document.write("<tr>"+"<th>Apellidos: </th>" +"<td>" + apellidos + "</td>"+"</tr>");
+        document.write("<tr>"+"<th>Email: </th>"+"<td>" + email + "</td>"+"</tr>");
+        document.write("<tr>"+"<th>Lado en el que te desarrollas: </th>"+"<td>" + desarollo + "</td>"+"</tr>")
+        document.write("<tr>"+"<th>Nivel de experiencia: </th>"+"<td>" + experiencia + "</td>" + "</tr>")
+        document.write("<tr>"+"<th>Tecnologías: </th>"+"<td>" + tecnologias + "</td>" + "</tr>")
+        document.write("<tr>"+"<th>Text Area: </th>"+"<td>" + area + "</td>" + "</tr>"+"</table>")
+    </script>
+</body>
+</html>

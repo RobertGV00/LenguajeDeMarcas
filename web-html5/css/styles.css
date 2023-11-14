@@ -1,0 +1,107 @@
+/*PAGINA PRINCIPAL*/
+body {
+    background-color: rebeccapurple;
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+header {
+    text-align: center;
+    background-color: blanchedalmond;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav {
+    background-color:rgb(167, 138, 25);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+main#principal
+{
+    display: flex;
+}
+section, article
+{
+    border: 2px solid black;
+    margin-top: 10px;
+    flex: 4;
+    padding: 10px;
+}
+
+
+aside {
+    padding: 10px;
+    border:1px solid black;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 50%;
+    flex: 1.5;
+    
+}
+
+footer {
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/*LISTAS*/
+body#listas {
+    background-color: rebeccapurple;
+}
+main{
+    display: flex;
+}
+.desordenada {
+color: white;
+background-color: rgb(151, 25, 151);
+}
+
+article.desordenada {
+    background-color: violet;
+}
+
+.desordenado {
+    list-style-type:circle;
+}
+
+.ordenada {
+    color: white;
+    background-color: rgb(111, 21, 196);
+    text-align: center;
+}
+article.ordenada {
+    background-color:rgb(143, 92, 209) ;
+    text-align: left;
+}
+
+ol.romano {
+    list-style-type: upper-roman;
+    
+}
+
+.descriptiva {
+    color: white;
+    background-color: rgb(80, 10, 146);
+}
+article.descriptiva {
+    background-color: mediumvioletred;
+}
+
+a.navegacionlistas {
+    color: mistyrose;
+    font-size: medium;
+}
+
+header.lista {
+    background-color: rgb(67, 140, 204);
+}
+
+.navegacionlistas {
+background-color: black;
+padding: 5px;
+}
+
