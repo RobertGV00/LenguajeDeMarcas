@@ -50,7 +50,7 @@ footer {
 
 /*LISTAS*/
 body#listas {
-    background-color: rebeccapurple;
+    background-color: rgb(19, 74, 122);
 }
 main{
     display: flex;
@@ -88,7 +88,7 @@ ol.romano {
     background-color: rgb(80, 10, 146);
 }
 article.descriptiva {
-    background-color: mediumvioletred;
+    background-color: rgb(158, 18, 107);
 }
 
 a.navegacionlistas {
@@ -105,3 +105,15 @@ background-color: black;
 padding: 5px;
 }
 
+.flistas {
+    color: white;
+    background-color: rgb(125, 140, 167);
+}
+
+
+
+/*IMAGENES*/
+
+#fecha-actual {
+    text-align: center;
+}
