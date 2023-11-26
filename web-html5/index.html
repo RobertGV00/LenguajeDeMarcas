@@ -9,38 +9,39 @@
 <body>
     <!-- Header -->
     <header>
-        <h1>Titulo Pagina Web</h1> 
-        <nav>
-            <a href="./html/listas.html">Listas</a>
-            <a href="./html/tablas.html">Tablas</a>
-            <a href="./html/imagenes.html">Imagenes</a>
-            <a href="./html/formatos-de-texto.html">Fromatos de texto</a>
-            <a href="./html/etiquetas-basicas.html">Etiquetas basicas</a>
-            <a href="./html/enlaces.html">Enlaces</a>
+        <h1>Pagina Principal</h1> 
+        <details>
+        <summary>Navegación</summary>
+        <nav class="navegacion">
+            <a href="./html/listas.html" class="navegacion">Listas</a>
+            <a href="./html/tablas.html" class="navegacion">Tablas</a>
+            <a href="./html/imagenes.html" class="navegacion">Imagenes</a>
+            <a href="./html/formatos-de-texto.html" class="navegacion">Fromatos de texto</a>
+            <a href="./html/etiquetas-basicas.html" class="navegacion">Etiquetas basicas</a>
+            <a href="./html/enlaces.html" class="navegacion" >Enlaces</a>
         </nav>
+    </details>
     </header>
     <!--puede haber un nav en el header-->
     <!-- Main -->
     <main id="principal">
         <section>
-            <h2>Section 1</h2>
-            <p>Prueba de section</p>
+            <h2>HTML</h2>
             <article>
-                <h2>Articulo 1</h2>
-                <p>Prueba de article</p>
+                <h2>¿Que es HTML?</h2>
+                <p>HTML, o HyperText Markup Language (Lenguaje de Marcado de Hipertexto), es un estándar utilizado para crear y diseñar páginas web. Define la estructura y organización del contenido mediante etiquetas y atributos, permitiendo la creación de enlaces, imágenes, formularios y otros elementos interactivos en la web. </p>
             </article>
+            <div class="imagenprincipal">
+                <img src="./images/Principal.png" alt="Una imagen de HTML" class="imagenprincipal">
+            </div>
         </section>
 
-        <aside>
-            <p>Prueba de aside</p>
-        </aside>
 
-        
     </main>
 
-    <footer>
-        <p>Prueba de footer</p>
-        <a href="./html/contacto.html">Contacto</a>
+    <footer class="princpial">
+        <p>Pagina web echa por Robert y Sergio</p>
+        <a href="./contacto.html" class="flistas">Contacto</a>
         <p id="fecha-actual"></p>
         <script src="./jss/script.js"></script>
     </footer>

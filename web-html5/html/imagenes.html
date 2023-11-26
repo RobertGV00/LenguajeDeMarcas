@@ -3,42 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Imagenes</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header>
+    <header id="imagen">
         <h1>Imagenes</h1>
-        <nav>
-            <a href="../index.html">Pagina principal </a>
-            <a href="./listas.html">Listas</a>
-            <a href="./tablas.html">Tablas</a>
-            <a href="./formatos-de-texto.html">Fromatos de texto</a>
-            <a href="./etiquetas-basicas.html">Etiquetas basicas</a>
-            <a href="./enlaces.html">Enlaces</a>
-           
-        </nav>
+       
+            <details>
+                <summary>Navegación</summary>
+                <nav class="navegacion">
+                    <a href="../index.html" class="navegacion">Pagina principal </a>
+                    <a href="./listas.html" class="navegacion">Listas</a>
+                    <a href="./tablas.html" class="navegacion">Tablas</a>
+                    <a href="./formatos-de-texto.html" class="navegacion">Fromatos de texto</a>
+                    <a href="./etiquetas-basicas.html" class="navegacion">Etiquetas basicas</a>
+                    <a href="./enlaces.html" class="navegacion">Enlaces</a>
+                </nav>
+           </details>
+        
     </header>
 
     <main>
 <section class="imagenes">
 <h2>Imagenes</h2>
-    <article>
+    <article class="articulo1img">
         <h4>¿Como añadir una imagen a una pagina web?</h4>
         <p>Para añadir una imagen a una pagina web, lo primero que tenemos que conocer es la etiqueta para insertarla, esta etiqueta es <b>&lt;img&gt;</b>. <br>
         Dentro de esta etiqueta, tiene distintos atributos que iremos viendo para que son cada uno:</p>
         <h4>Atributo src: </h4>
         <p>El atributo src es el que se utliza para seleccionar la ubicación donde se encuentra la imagen almacenada. <b>&lt;img src="ubicacion-imagen"&gt;</b></p>
         <h4>Atributo alt: </h4>
-        <p>Se usa para darle un texto a la imagen si esta no puede cargar por cualqueir motivo. <br> <b>&lt;img src="ubicacion-imagen" alt="Descripcion imagen"&gt;</b> </p>
+        <p>Se usa para darle un texto a la imagen si esta no puede cargar por cualqueir motivo y es obligatoria. <br> <b>&lt;img src="ubicacion-imagen" alt="Descripcion imagen"&gt;</b> </p>
+        <p>Lo siguiente que habría que pensar es en el tamaño que daremos a la iamgen, que eso se hara en un css aparte, yo sugiero usar dentro de la img una clase o una id para poder darle un estilo concreto a cada imagen. </p>
+        <h5>Ejemplo de imagen:</h5>
+        <div class="image">
+            <img src="../images/_a9bcabfd-d003-48bb-9427-f218a33736bb.jpeg" alt="HTML" class="image">
+        </div>
+    
     </article>
 
 </section>
     </main>
 
-    <footer>
+    <footer class="pieimg">
         <p>Pagina web echa por Robert Y Sergio</p>
-        <a href="./contacto.html">Contacto</a>
+        <a href="./contacto.html" class="flistas">Contacto</a>
         <p id="fecha-actual"></p>
         <script src="../jss/script.js"></script>
     </footer>

@@ -14,18 +14,18 @@
         <h1>Listas</h1>
         <details>
             <summary>Navegación</summary>
-            <nav class="navegacionlistas">
-                <a href="../index.html" class="navegacionlistas">Pagina principal</a>
-                <a href="./tablas.html" class="navegacionlistas">Tablas</a>
-                <a href="./imagenes.html" class="navegacionlistas">Imagenes</a>
-                <a href="./formatos-de-texto.html" class="navegacionlistas">Fromatos de texto</a>
-                <a href="./etiquetas-basicas.html" class="navegacionlistas">Etiquetas basicas</a>
-                <a href="./enlaces.html" class="navegacionlistas">Enlaces</a>
+            <nav class="navegacion">
+                <a href="../index.html" class="navegacion">Pagina principal</a>
+                <a href="./tablas.html" class="navegacion">Tablas</a>
+                <a href="./imagenes.html" class="navegacion">Imagenes</a>
+                <a href="./formatos-de-texto.html" class="navegacion">Fromatos de texto</a>
+                <a href="./etiquetas-basicas.html" class="navegacion">Etiquetas basicas</a>
+                <a href="./enlaces.html" class="navegacion">Enlaces</a>
             </nav>
         </details>
     </header>
 
-    <main>
+    <main id="mainlista">
         <section class="desordenada" id="desordenada">
             <h2>Listas Desordenadas </h2>
             <p>Una lista desordenada, empieza con un &lt;ul&gt; y acaba con un &lt;/ul&gt;. <br>Y luego usamos un
@@ -39,12 +39,14 @@
                     <li>Fanta</li>
                 </ul>
 
-                <h4>Desordenada con circulos vacios</h4>
+                <h4>Desordenada con diferentes niveles</h4>
                 <ul class="desordenado">
-                    <li>Jack Daniels</li>
-                    <li>Bombay Shappire</li>
-                    <li>BlueLabel</li>
-                    <li>Puerto de Indias</li>
+                    <li>Jack Daniels
+                        <ul>
+                            <li>Diferente Nivel 1</li>
+                            <li>Diferente</li>
+                        </ul>
+                    </li>            
                 </ul>
 
             </article>
@@ -63,13 +65,16 @@
                     <li>Articulo 4</li>
                 </ol>
 
-                <h4>Ordenada con numeros romanos </h4>
+                <h4>Ordenada con numeros romanos a difernte nivel </h4>
 
                 <ol class="romano">
-                    <li>Articulo 1</li>
-                    <li>Articulo 2</li>
-                    <li>Articulo 3</li>
-                    <li>Articulo 4</li>
+                    <li>Articulo 1
+                        <ol class="romano">
+                            <li>Artiulo 1.1</li>
+                            <li>Articulo 1.2</li>
+                        </ol>
+                    </li>
+                    
                 </ol>
             </article>
         </section>
