@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="styles.css" ?>
+
+<curriculum>
+
+    <informacionPersonal>
+        <nombre>Robert George</nombre>
+        <apellido1>Vorobchevici</apellido1>
+        <apellido2></apellido2>
+        <añoDeNacimiento>23/04/2000</añoDeNacimiento>
+    </informacionPersonal>
+
+    <residencia>
+        <ciudad>Madrid</ciudad>
+         <pais>España</pais>
+    </residencia>
+
+    <datosDeContacto>
+        <telefono>662079315</telefono>
+        <correoElectronico>robertgvclase@gmail.com</correoElectronico>
+        <perfilLinkedin>www.linkedin.com/in/robert-george-vorobchevici</perfilLinkedin>
+    </datosDeContacto>
+
+    <descripcion>Esta es una breve descripcion personal sobre cada persona que debremos poner.</descripcion>
+    
+    <competencias>
+        <nombre_competencia>Informatica</nombre_competencia>
+        <nivel>Avanzado</nivel>
+        <nombre_competencia>Ingles</nombre_competencia>
+        <nivel>B2</nivel>
+        <nombre_competencia>Seguridad</nombre_competencia>
+        <nivel>Avanzado</nivel>
+    </competencias>
+
+    <formacion_academica>
+        <titulacion>
+            Grado Medio en SMR
+        </titulacion>
+        <centro_de_formacion>
+            I.E.S Rey Fernando VI
+        </centro_de_formacion>
+        <año_de_titulacion>
+            2023
+        </año_de_titulacion>
+    </formacion_academica>
+
+    <experiencia_profesional>
+        <puesto>
+            Técnico Informatico
+        </puesto>
+        <empresa>
+            Informatica Inventada S.L
+        </empresa>
+        <año_inicio>
+            03/2023
+        </año_inicio>
+        <año_fin> 
+            12/2023
+        </año_fin>
+    </experiencia_profesional>
+    
+</curriculum>

@@ -1,0 +1,35 @@
+<!ELEMENT curriculum (informacionPersonal, residencia, datosDeContacto, descripcion, competencias, formacion_academica, experiencia_profesional)>
+
+<!ELEMENT informacionPersonal (nombre, apellido1, apellido2, añoDeNacimiento)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido1 (#PCDATA)>
+<!ELEMENT apellido2 (#PCDATA)>
+<!ELEMENT añoDeNacimiento (#PCDATA)>
+
+<!ELEMENT residencia (ciudad, pais)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+
+<!ELEMENT datosDeContacto (telefono, correoElectronico, perfilLinkedin)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT correoElectronico (#PCDATA)>
+<!ELEMENT perfilLinkedin (#PCDATA)>
+
+<!ELEMENT descripcion (#PCDATA)>
+
+<!ELEMENT competencias (nombre_competencia, nivel)+>
+<!ELEMENT nombre_competencia (#PCDATA)>
+<!ELEMENT nivel (#PCDATA)>
+
+<!ELEMENT formacion_academica (titulacion, centro_de_formacion, año_de_titulacion)+>
+<!ELEMENT titulacion (#PCDATA)>
+<!ELEMENT centro_de_formacion (#PCDATA)>
+<!ELEMENT año_de_titulacion (#PCDATA)>
+
+<!ELEMENT experiencia_profesional (puesto, empresa, año_inicio, año_fin)+>
+<!ELEMENT puesto (#PCDATA)>
+<!ELEMENT empresa (#PCDATA)>
+<!ELEMENT año_inicio (#PCDATA)>
+<!ELEMENT año_fin (#PCDATA)>
+
+<!-- Los + del elemento formación academica y experiencia profesional, estan puestos por si acaso en un futuro el curriculum se actualiza y tiene mas de una titulacion y mas de un puesto de trabajo.-->

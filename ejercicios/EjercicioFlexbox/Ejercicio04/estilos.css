@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(41, 41, 80);
+    color: white;
+    font-size: xx-large;
+    padding: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background-color: cadetblue;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    justify-content: flex-start;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 15vh;
+}
+
+a {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(41, 41, 80);
+}
+
+a:hover {
+    background-color: yellow;
+    color: cadetblue;
+}

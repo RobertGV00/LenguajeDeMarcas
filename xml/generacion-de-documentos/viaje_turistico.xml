@@ -1,0 +1,32 @@
+<viaje_turistico>
+<cliente>
+    <nombre>Manolo</nombre>
+    <apellido1>Perez</apellido1>
+    <apellido2>Juan</apellido2>
+</cliente>
+<cliente>
+    <nombre>Mohamed</nombre>
+    <apellido1>El</apellido1>
+    <apellido2>Harab</apellido2>
+</cliente>
+<cliente>
+    <nombre>Ahmed</nombre>
+    <apellido1>El</apellido1>
+    <apellido2>Binladen</apellido2>
+</cliente>
+<fecha>
+    <fecha-inicio>02/04/2024</fecha-inicio>
+    <fecha_fin>22/04/2024</fecha_fin>
+</fecha>
+<ciudad_origen>
+    <origen_del_viaje>Dubai</origen_del_viaje>
+</ciudad_origen>
+
+    <destino>
+        <nombre_ciudad>New York</nombre_ciudad> 
+        <nombre_hotel>Aman New York</nombre_hotel>   
+        <noches>30</noches>    
+    </destino>
+    <precio>3.000€</precio>
+
+</viaje_turistico>

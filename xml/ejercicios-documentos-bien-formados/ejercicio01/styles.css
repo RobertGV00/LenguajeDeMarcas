@@ -1,0 +1,246 @@
+curriculum {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    box-shadow: 1px 1px 20px 20px rgba(0, 0, 0, .5);
+  }
+  /*Informacion personal*/
+  informacionPersonal {
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: #e0e0e0;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+  }
+  informacionPersonal::before {
+    content: "Datos Personales";
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+    background-color: white;
+    margin-bottom: 10px;
+  }
+ 
+  nombre, apellido1, añoDeNacimiento {
+    color: black;
+    margin-right: 10px;
+    padding: 8px;
+    text-align: left;
+  }
+
+  nombre::before {
+    content: "Nombre: ";
+    font-weight: bold;
+  }
+  
+  apellido1::before {
+    content: "Apellido: ";
+    font-weight: bold;
+  }
+
+  añoDeNacimiento::before {
+    content: "Fecha de nacimiento: ";
+    font-weight: bold;
+
+  }
+
+ datosDeContacto, descripcion, formacion_academica, experiencia_profesional {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+    display: flex;
+    flex-direction: column;
+    
+  }
+/*Residencia*/
+  residencia {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #e0e0e0;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 80px;
+  }
+
+  residencia::before {
+    content: "Residencia ";
+    font-weight: bold;
+    text-align: center;
+    font-size: xx-large;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+    background-color: white;
+    margin-bottom: 10px;
+  }
+  
+  ciudad::before {
+    content: "Ciudad: ";
+    font-weight: bold;
+    
+  }
+
+  pais::before {
+    content: "Pais: ";
+    font-weight: bold;
+  }
+
+  /*Datos de contacto*/
+  datosDeContacto {
+    background-color: #dddddd;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-left: auto;
+    margin-top: -122px;
+    height: 20%;
+}
+datosDeContacto::before {
+  content: "Contacto";
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-bottom: 15px;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+  background-color: white;
+}
+telefono::before {
+  content: "Telefono: ";
+  font-weight: bold;
+}
+
+correoElectronico::before{
+  content: "Email: ";
+  font-weight: bold;
+}
+
+perfilLinkedin::before{
+  content: "Linkedin: ";
+  font-weight: bold;
+}
+  /*Descripcion*/
+  descripcion::before {
+    content: "Descripcion Personal";
+    font-weight: bold;
+    text-align: center;
+    font-size: xx-large;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+    background-color: white;
+  }
+  /*Comptenecias*/
+  competencias{
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #e0e0e0;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+    display: flex;
+    flex-direction: column;
+    
+  }
+  nombre_competencia::before {
+    content: "Competencia: ";
+    font-weight: bold;
+    
+  }
+  nivel::before {
+    content: "Nivel: ";
+    font-weight: bold;
+  }
+
+  competencias::before {
+  content: "Competencias";
+  font-weight: bold;
+  font-size: xx-large;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+  background-color: white;
+  margin-bottom: 10px;
+  }
+/*Formacion academica*/
+formacion_academica::before {
+  content: "Formación Académica";
+  font-weight: bold;
+  font-size: xx-large;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+titulacion::before{
+  content: "Titulo: ";
+  font-weight: bold;
+}
+centro_de_formacion::before{
+  content: "Centro: ";
+  font-weight: bold;
+}
+año_de_titulacion::before {
+  content: "Año: ";
+  font-weight: bold;
+}
+
+/*Experiencia Laboral*/
+experiencia_profesional::before {
+  content: "Experiencia Laboral";
+  font-weight: bold;
+  font-size: xx-large;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+  background-color: white; 
+  margin-bottom: 10px;
+}
+
+puesto::before {
+  content: "Puesto: ";
+  font-weight: bold;
+}
+
+empresa::before {
+  content: "Empresa: ";
+  font-weight: bold;
+}
+
+año_inicio::before {
+  content: "Año inicio: ";
+  font-weight: bold;
+}
+
+año_fin::before{  
+  content: "Año fin: ";
+  font-weight: bold;
+}
+  nombre_competencia, nivel, titulacion, centro_de_formacion, año_de_titulacion, puesto, empresa, año_inicio, año_fin {
+    color: black;
+    margin: 10px;
+    font-weight: 500;
+  }
+  
