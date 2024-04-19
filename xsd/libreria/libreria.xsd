@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="telefonoType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{9}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="codigoType">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1000"/>
+      <xs:maxInclusive value="9999"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="formatoType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Rústica"/>
+      <xs:enumeration value="Tapa blanda"/>
+      <xs:enumeration value="Tapa dura"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="precioType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d+(\.|,)\d{1,2}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="libreria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="codigo" type="codigoType"/>
+        <xs:element name="direccion" type="xs:string"/>
+        <xs:element name="telefono" type="telefonoType"/>
+        <xs:element name="propietario">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="telefono" type="telefonoType" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="libro" minOccurs="1" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="titulo" type="xs:string"/>
+              <xs:element name="autor" type="xs:string"/>
+              <xs:element name="formato" type="formatoType" minOccurs="0"/>
+              <xs:element name="publicacion" type="xs:integer" minOccurs="0"/>
+              <xs:element name="precio" type="precioType"/>
+              <xs:element name="cantidad" type="xs:integer" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
